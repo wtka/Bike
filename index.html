@@ -1,10 +1,29 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-<section class="main mb-4">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>  
+  <header>
+    <h1><a href="#">fixie</a></h1>
+    <nav data-aos="fade-up" class="animate__animated animate__slideInDown">  
+      <ul>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>       
+    </nav>
+  </header>
+
+  <section class="main mb-4">
   <div class="container">
     <ul>
       <li class="main-card">
@@ -104,3 +123,25 @@ current: index
     </ul>
   </div>
 </section>
+
+  <footer>
+    <div class="container">
+    <nav>
+      <a href="#">Product</a>
+      <a href="#">Blog</a>
+      <a href="#">contact</a>
+    </nav>
+    <p class="copyright">© 2020 Fixie. All Rights Reserved.</p>
+    <a href="#"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/8d1ef3b63951b7f749edd130ff66e4d4856a3df2/week7/logo-fixie.svg"></a>
+    </div>
+  </footer>
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
